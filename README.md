@@ -21,34 +21,31 @@ microOS is a minimalist, educational operating‑system project. It’s designed
 ### Prerequisites
 
 - An x86 or x86_64 PC (or emulator)  
-- Tools to build or test the ISO (e.g. `dd`, `qemu`, or physical boot media)  
-- Familiarity with low-level programming, or willingness to learn  
+- Tools to build or test the ISO (e.g. `dd`, `qemu`, `grub-mkrescue`, or physical boot media like a flash drive)  
+- Familiarity with low-level programming, or willingness to learn
 
 ### Running microOS
 
-1. Download or build the ISO — current repo includes `microOS.iso`. :contentReference[oaicite:2]{index=2}  
+1. Download or build the ISO — current repo includes microOS.iso and the raw source code
 2. Run in a virtual machine / emulator (for testing) — e.g.:
 
-    ```bash
+    ```sh
     qemu-system-x86_64 -cdrom microOS.iso
     ```
 
 3. Boot and try out the shell / built‑in commands.
-
-(If you build from source, describe build steps here — placeholder until build instructions are added.)
-
-## Contributing & Extending
-
-If you want to expand microOS — add functionality, modules, or learning examples — contributions are welcome. Some directions to consider:
-
-- Add new shell commands  
-- Implement a simple file‑system driver or system calls  
-- Extend kernel functionality (memory management, multitasking, I/O)  
-- Improve boot / init process  
-- Add documentation, examples, or tests
-
-If you contribute, make sure to follow the project's license (GPL‑3.0) and add your name / notes to indicate modifications.
-
+  
+### Building from source  
+1. To build from source, you can clone this repository and compile the kernel (raw/kernel.cpp) and link with ld using raw/linker.ld as the file to ld to follow.
+2. Next, you create the following file structure:
+    iso
+     | - kernel.bin (compiled kernel)
+     | - grub
+     |    | - grub.cfg (from raw/grub.cfg)
+     | - Any other files/programs you want in your build
+3. You now use grub-mkrescue to compile the folder iso/ into a bootable iso
+4. You are done
+   
 ## License
 
 microOS is licensed under the GNU GPL‑3.0. :contentReference[oaicite:3]{index=3}
