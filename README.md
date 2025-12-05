@@ -54,11 +54,10 @@ microOS is licensed under the GNU GPL‑3.0. :contentReference[oaicite:3]{index=
 
 ## (Optional) Todo / Roadmap
 
-- [ ] Document build-from-source instructions  
+- [ ] Tweak the kernel to your needs
 - [ ] Add basic I/O drivers or utilities  
-- [ ] Add tutorial or comments explaining kernel code  
 - [ ] Add automated testing (emulator boot + basic command test)  
-- [ ] Improve shell, support for more commands  
+- [ ] Add better shell shell, support for more commands  
 
 ---
 
