@@ -10,23 +10,22 @@ microOS is a minimalist, educational operating‑system project. It’s designed
 
 ## What microOS includes / supports
 
-- Kernel (basic)  
-- Bootable ISO image (see `microOS.iso`)  
+- Kernel (basic)    
 - Basic file-system operations  
 - Simple shell / command-line interface  
-- GPL‑3.0 license (free / open source) :contentReference[oaicite:1]{index=1}
+- GPL‑3.0 license (free / open source)
 
 ## Getting Started
 
 ### Prerequisites
 
 - An x86 or x86_64 PC (or emulator)  
-- Tools to build or test the ISO (e.g. `dd`, `qemu`, `grub-mkrescue`, or physical boot media like a flash drive)  
+- Tools to build the ISO (e.g. `dd`, `qemu`, `grub-mkrescue`, or physical boot media like a flash drive)  
 - Familiarity with low-level programming, or willingness to learn
 
 ### Running microOS
 
-1. Download or build the ISO — current repo includes microOS.iso and the raw source code
+1. Build the ISO — current repo includes the raw source code
 2. Run in a virtual machine / emulator (for testing) — e.g.:
 
     ```sh
