@@ -13,7 +13,7 @@ microOS is a minimalist, educational operating‑system project. It’s designed
 - Kernel (basic)    
 - Basic file-system operations  
 - Simple shell / command-line interface  
-- GPL‑3.0 license (free / open source)
+- MPL‑2.0 license (free / open source)
 
 ## Getting Started
 
