@@ -47,7 +47,7 @@ microOS is a minimalist, educational operating‑system project. It’s designed
    
 ## License
 
-microOS is licensed under the GNU GPL‑3.0. :contentReference[oaicite:3]{index=3}
+microOS is licensed under the Mozilla MPL-2.0
 
 ---
 
@@ -56,7 +56,8 @@ microOS is licensed under the GNU GPL‑3.0. :contentReference[oaicite:3]{index=
 - [ ] Tweak the kernel to your needs
 - [ ] Add basic I/O drivers or utilities  
 - [ ] Add automated testing (emulator boot + basic command test)  
-- [ ] Add better shell shell, support for more commands  
+- [ ] Add better shell shell, support for more commands
+- [ ] Add drivers other than VGA which is old
 
 ---
 
